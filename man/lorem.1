@@ -1,0 +1,57 @@
+.\" filepath: /home/yaycicek/lorem/man/lorem.1
+.TH LOREM 1 "November 2025" "lorem 1.0" "User Commands"
+.SH NAME
+lorem \- print "Lorem ipsum dolor sit amet" to standard output
+.SH SYNOPSIS
+.B lorem
+.SH DESCRIPTION
+.B lorem
+is a simple utility that prints the text "Lorem ipsum dolor sit amet" 
+to standard output. It is primarily used for testing and demonstration 
+purposes.
+.PP
+The program uses the write(2) system call to output the text directly 
+to file descriptor 1 (stdout).
+.SH OPTIONS
+This program does not accept any command-line options.
+.SH EXIT STATUS
+The program exits with one of the following values:
+.TP
+.B 0
+Success
+.TP
+.B 1
+Failure (typically if write operation fails)
+.SH EXAMPLES
+.PP
+Print lorem ipsum text:
+.RS
+.nf
+$ lorem
+Lorem ipsum dolor sit amet
+.fi
+.RE
+.PP
+Redirect output to a file:
+.RS
+.nf
+$ lorem > output.txt
+.fi
+.RE
+.SH AUTHOR
+Written by Yunus Emre AYÇİÇEK.
+.SH REPORTING BUGS
+Report bugs to: <your-email@example.com>
+.PP
+Project home page: <https://github.com/yourusername/lorem>
+.SH COPYRIGHT
+Copyright \(co 2025 Yunus Emre AYÇİÇEK.
+.PP
+License MIT: <https://opensource.org/licenses/MIT>
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.BR printf (1),
+.BR echo (1),
+.BR write (2)
